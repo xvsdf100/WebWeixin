@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<ChatItem>   	
+	<HorizontalLayout>
+		<Control name="HeadIcon" width="34" height="34" padding="10,15,10,10" bkimage="file='Main\default.png'"/>
+	</HorizontalLayout>	    
+</ChatItem>   
+
+
+	
+	
+	

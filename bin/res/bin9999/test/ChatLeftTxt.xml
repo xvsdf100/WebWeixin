@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window>   
+	<ListContainerElement >
+	    <HorizontalLayout>
+	        <EmotionText name="content" text="receive text"  padding="16,10,16,10" textpadding="10,10,10,5" minheight="40" maxwidth= "450" textcolor="#001F6203"  font="14" align="center" bkimage="file=&apos;chat\Chat_Left_normal.png&apos; corner=&apos;12,26,12,5&apos;" hotimage="file=&apos;Chat_Left_Hover.png&apos; corner=&apos;12,26,12,5&apos;" pushedimage="file=&apos;Chat_Left_Click.png&apos; corner=&apos;12,26,12,5&apos;" />
+	        <HorizontalLayout />
+	    </HorizontalLayout>
+	</ListContainerElement>
+</Window>   
+

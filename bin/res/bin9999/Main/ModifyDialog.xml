@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="350,170" caption="0,0,0,45">
+	<Font name="微软雅黑" size="12" bold="false" default="true" />
+	<Font name="微软雅黑" size="12" bold="true"/>
+	<Font name="微软雅黑" size="14" bold="false" />
+    <VerticalLayout name="mainLayout" bkimage="file='Main\imgs\Windows_BG.png' corner='20,40,20,40'">
+		<HorizontalLayout width="350" height="50">
+			<Label name="titleLab" float="true" text="修改我的群昵称" pos="15,10,0,0" width="160" height="20" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA"  font="2"/>
+			<Button name="closebtn" float="true" pos="320,10,0,0" width="18" height="18" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center"
+			 normalimage="file='chatroom\TopBar_Close_Btn.png'" hotimage="chatroom\TopBar_Close_Btn_Hover.png" pushedimage="chatroom\TopBar_Close_Btn_Click.png" />
+		</HorizontalLayout>
+        <Edit name="contendEdit" padding="20,15,20,10" inset="7,7,7,7" height="35" maxchar="50" wantreturn="true" textcolor="#FF000000" font="2" bkimage="file='Main\imgs\Profile_BG.png' corner='10,10,10,10'"/>
+		<HorizontalLayout>
+			<Button text="确 定" name="okbtn"  float="true" pos="165,10,0,0" width="80" height="40" textcolor="#FF3E3E3E" disabledtextcolor="#FFB3B3B3" align="center"  textcolor="#FFFFFFFFFF"  font="2"
+			normalimage="file='common\Btn_Green.png' corner='5,10,5,10'" hotimage="file='common\Btn_Green_Hover.png' corner='5,10,5,10'" pushedimage="file='common\Btn_Green_Click.png' corner='5,10,5,10'" disabledimage="file='common\Btn_NotClick.png' corner='5,10,5,10'"/>
+			<Button text="取 消" name="cancelbtn"  float="true" pos="255,10,0,0" width="80" height="40" textcolor="#FF3E3E3E" disabledtextcolor="#FFB3B3B3" align="center"  font="2"
+			normalimage="file='common\Btn_White.png' corner='5,10,5,10'" hotimage="file='common\Btn_White_Hover.png' corner='5,10,5,10'" pushedimage="file='common\Btn_White_Click.png' corner='5,10,5,10'" />
+        </HorizontalLayout>
+    </VerticalLayout>
+</Window>

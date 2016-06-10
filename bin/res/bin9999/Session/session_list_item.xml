@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Window>
+  <SessionListItemUI name="session_item" menu="true">
+        <HorizontalLayout height="46">
+          <HeadImgUI name="logo" width="30" height="30 " mouse="false" padding="9,8,0,0"/>
+		  <UIListLabel name="nickname" padding="10,0,5,0" bordersize="0" textcolor="#FF3e3e3e" endellipsis="true" selectedtextcolor="#FFFFFFFF"/>
+          <VerticalLayout padding="10,0,0,0"   visible="false">
+				<HorizontalLayout>
+
+					<UIListLabel name="time" width="35" text="11:23" bordersize="0" textcolor="#FFADADAD" align="right"  selectedtextcolor="#FFFFFFFF" />
+				</HorizontalLayout>
+				<HorizontalLayout>
+					<Label name="atuser_text" text="[有人@我]" width="0" textcolor="#ffdd2b2b" />
+					<UIListLabel name="description" bordersize="0" textcolor="#FF808080" endellipsis="true" selectedtextcolor="#FFFFFFFF" />
+					<Label name="no_notify_bell" width="14" height="16" bordersize="0" bkimage="Session\ChatList_Mute_Icon.png" align="center"/>
+				</HorizontalLayout>
+          </VerticalLayout>
+		  <Label name="unread_count" width="15" height="15" pos="32,3,47,18" float="true" text="5" font="4" bordersize="0" bkimage="Session\Unread_BG.png" textcolor="#FFFFFFFF" align="center" textpadding="0,0,0,0"/>
+		  <Label name="big_unread_count" width="23" height="15" pos="24,3,47,18" float="true" text="5" font="4" bordersize="0" bkimage="Session\Unread_BG_02.png" textcolor="#FFFFFFFF" align="center" textpadding="0,0,0,0"/>
+		  <Label name="no_notify_red_dot" width="7" height="8" pos="34,5,41,13" float="true" bordersize="0" bkimage="Session\RedDot.png"/>
+        </HorizontalLayout>
+  </SessionListItemUI>
+</Window>

@@ -1,0 +1,12 @@
+<!-- 单纯的用于整个消息调度，不显示界面 -->
+<?xml version="1.0" encoding="UTF-8"?>
+<Window size="280,400" caption="0,0,0,35" maxinfo="300,340">
+	<Font name="微软雅黑" size="12" bold="false" default="true" />
+	<Font name="微软雅黑" size="16" bold="false"/>
+	<Font name="微软雅黑" size="14" bold="false"/>
+	<Font name="微软雅黑" size="21" bold="false"/>
+	<Font name="微软雅黑" size="14" bold="false" underline="true"/>
+<VerticalLayout width="280" height="400"  bkcolor="#FFAAAAAA">
+
+</VerticalLayout>
+</Window>

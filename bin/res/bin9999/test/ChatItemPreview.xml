@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="450,600" sizebox="4,4,4,4" caption="0,0,0,46" mininfo="900,660" roundcorner="4,4">
+   
+        <chatView name="ChatView" bkcolor="FFFFFFFF">
+        	
+        </chatView>        
+   
+</Window>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<ChatItem>
+	<HorizontalLayout height="20" >
+		<Control />
+		<EmotionText  minwidth="25" height="19" maxwidth= "160" textcolor="#FF000000" font="2"/>
+		<Control />
+	</HorizontalLayout>	
+</ChatItem>  
+

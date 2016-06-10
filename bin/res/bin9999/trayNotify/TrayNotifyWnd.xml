@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="150,200" caption="0,0,0,0" roundcorner="2,2">
+	<Font name="微软雅黑" size="12" bold="false" default="true" />
+	<Font name="微软雅黑" size="12" bold="true"/>
+	<Font name="微软雅黑" size="14" bold="false"/>
+	<Default name="VScrollBar" value="scrollbarsize=&quot;9&quot; scrollbarfloat=&quot;true&quot; button1normalimage=&quot;file='common\scrollbar.png' source='0,28,9,37'&quot; button1hotimage=&quot;file='common\scrollbar.png' source='0,28,9,37'&quot; button1pushedimage=&quot;file='common\scrollbar.png' source='0,28,9,37'&quot; button2normalimage=&quot;file='common\scrollbar.png' source='0,37,9,46'&quot; button2hotimage=&quot;file='common\scrollbar.png' source='0,37,9,46'&quot; button2pushedimage=&quot;file='common\scrollbar.png' source='0,37,9,46'&quot; thumbnormalimage=&quot;file='common\scrollbar.png' source='0,0,9,6' corner='0,2,0,2'&quot; thumbhotimage=&quot;file='common\scrollbar.png' source='9,0,18,6' corner='0,2,0,2'&quot; thumbpushedimage=&quot;file='common\scrollbar.png' source='18,0,27,6' corner='0,2,0,2'&quot; bknormalimage=&quot;file='common\scrollbar.png' source='27,0,36,28' corner='0,14,0,12'&quot;"/>
+    <VerticalLayout width="220" name="mainLayout" bkimage="file='trayNotify\imgs\SystemTray_BG.png' corner='5,60,5,5'">
+		<Label name="titleLab" text="新消息" padding="11,5,0,0" width="220" height="20" textcolor="#00000000" disabledtextcolor="#FFA7A6AA"  font="1"/>
+		<TrayNotifyListUI name="notify_list" padding="1,0,1,0" header="hidden" vscrollbar="true" itemlinecolor="#FFebebeb" itemlineheight="1" menu="false" itemselectedbkcolor="#FF498EDA" itemhotbkcolor="#FFE6E6E6"/>
+    </VerticalLayout>
+</Window>

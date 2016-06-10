@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<ChatItem>
+	<HorizontalLayout>			
+				<HeadImgUI name="HeadIcon" width="34" height="34" padding="10,15,10,10" />	        
+			  <VerticalLayout name="appLayout">					
+						<BubbleFrame name="chatContent"  height="38" padding="0,10,0,10" inset="16,13,12,12"  menu="true" bkimage="file='chat\Chat_FriendBubble.png' corner='12,30,12,10'" hotimage="file='chat\Chat_FriendBubble_Hover.png' corner='12,30,12,10'" pushedimage="file='chat\Chat_FriendBubble_Active.png' corner='12,30,12,10'">
+							<mmButton name="chatEventBtn" menu="true"  />	 
+						</BubbleFrame>
+					 <HorizontalLayout name="appTip" width="70" height="20" padding="8,0,0,10"  bkimage="file='Chat\Chat_Remark_BG.png' corner='5,5,5,5'" visible="false">
+						<MMHttpImage name="appIcon" padding="4,2,0,2" height="16" width="16" bkcolor="#ffcccccc" visible="false"/>
+						<Label name="appName" padding="4,2,4,2" height="16" width="50" textcolor="#ffffffff" align="center"/>
+						</HorizontalLayout>				
+			  	</VerticalLayout>					
+				<Picture name="chatStatus" width="24" height="24" padding="10,0,0,0" align="center" visible="false" userdata="Common\loading_14.gif  chat\chat_msg_failed.png" /> 	        	         				
+		<Control />
+	</HorizontalLayout>		    		
+</ChatItem>   
+
+
+
+	
+	
+	

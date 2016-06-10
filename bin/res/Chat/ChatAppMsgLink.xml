@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<ChatItem>   		
+	<Container width="180" height="82">		      
+		<Picture name="icon" float="true" pos="0,22,0,0" width="60" height="60" bkimage="chat\file_icon.png"/>		        
+		<Label name="title" float="true" pos="0,0,0,0" width="180" height="20" font="1" endellipsis="true"/>		        
+		<Text name="description" float="true" pos="70,22,0,0" width="110" height="60" endellipsis="true" />							 									
+	</Container>		
+</ChatItem>   
+

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window >
+    <Container width="265" height="56">
+        <HorizontalLayout bordersize="0,1,0,0," bordercolor="#FFD7D7D7" padding="0,0,25,0" borderround="2,2" >
+				<VerticalLayout>
+					<Control />
+					<Text name="txtDes"  float="false"  endellipsis="true"  maxheight="40" textpadding="10,0,0,0" align="wrap" />
+					<Control />
+				</VerticalLayout>
+				
+				<VerticalLayout width="67">
+					<Control />
+					<MMHttpImage name="imgCover" float="false"  width="47" height="47" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" padding="10,0,10,0" bordersize="1,1,1,1," bordercolor="#FFD7D7D7"/>
+					<Control />
+				</VerticalLayout>
+			
+        </HorizontalLayout>
+		<mmButton name="btn" textcolor="#FF000000" bkcolor="#00000000" disabledtextcolor="#FFA7A6AA" align="center" />
+    </Container>
+</Window>

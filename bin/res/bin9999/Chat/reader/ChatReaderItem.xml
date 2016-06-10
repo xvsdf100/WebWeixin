@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window>
+    <HorizontalLayout>
+		<Control  />
+        <VerticalLayout width="265"  bkimage="file='Main\imgs\Profile_BG.png' corner='10,10,10,10'" padding="0,10,0,10" name="readerContainer">
+            <Container height="148" name="topContainer">
+                <VerticalLayout name="imgLayout">
+					<Text name="titleTxt" font="1" height="14" padding="10,10,10,10" visible="false"/>
+					<MMHttpImage name="imgTopCover" padding="10,10,10,10" height="128"/>
+	                <Text name="txtTitle" float="true" endellipsis="true"  pos="10,114,0,0" height="24" width="245" textpadding="10,3,0,0" bkcolor="#7F000000" textcolor="#FFFFFFFF" disabledtextcolor="#FFA7A6AA" />
+					<Text name="contentTxt" font="0" padding="10,0,10,0" visible="false" />
+					<HorizontalLayout name="readFullTip" padding="10,10,10,10" bordersize="0,1,0,0," bordercolor="#FFD7D7D7" height="20" visible="false">
+						<Label text="阅读全文" font="24" textpadding="0,3,0,0"/>
+						<Control />
+						<Label bkimage="file='Main\list_icon_a.png'" width="9" height="9" padding="0,8,0,0"/>
+					</HorizontalLayout>
+                </VerticalLayout>
+                <mmButton name="btnTopNew" float="false" pos="87,41,0,0" textcolor="#00000000" disabledtextcolor="#FFA7A6AA" align="center" />
+            </Container>
+            <VerticalLayout name="panelItems"  visible="true"/>
+        </VerticalLayout>
+		<Control  />
+    </HorizontalLayout>
+</Window>

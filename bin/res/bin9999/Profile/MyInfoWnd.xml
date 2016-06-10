@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="310,600" caption="0,0,0,45">
+	<Font name="微软雅黑" size="12" bold="false" default="true" />
+	<Font name="微软雅黑" size="12" bold="true"/>
+	<Font name="微软雅黑" size="14" bold="false"/>
+	<Font name="微软雅黑" size="18" bold="false" italic="false" />
+	<VerticalLayout name="mainLayout" >
+		<VerticalLayout bkimage="file='Profile\Dialog_BG4.png' corner='20,50,20,40'">
+			<HorizontalLayout width="310" height="50">
+				<Label name="titleLab" text="设置" float="true" pos="80,10,0,0" width="150" height="20" textcolor="#FF3E3E3E" disabledtextcolor="#FFA7A6AA" align="center" font="2"/>
+				<Button name="closebtn" float="true" pos="282,10,0,0" width="18" height="18" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center"
+				 normalimage="file='chatroom\TopBar_Close_Btn.png'" hotimage="chatroom\TopBar_Close_Btn_Hover.png" pushedimage="chatroom\TopBar_Close_Btn_Click.png" tooltip="关闭" />
+			</HorizontalLayout>
+			<VerticalLayout width="310" height="430" padding="0,10,0,0" name="contactcard_layout2">
+				<HeadImgUI name="headBtn" padding="105,25,0,0" width="100" height="100" recycle="false"  borderround="96,96"/>
+				<Label width="100" height="100" float="true" pos="105,25,0,0" bkimage="Profile\ProfileHeadShow_Frame.png"/>
+				<Label name="nicknameLab" padding="40,15,0,0" width="230" height="32" text="" font="3" align="center" endellipsis="true" textcolor="#FF3E3E3E"/>
+				<Text name="signatureLab" text="" padding="30,0,0,0" width="250" height="0" font="2" align="center" endellipsis="true" textcolor="#FF919191"/>
+				<Control bkcolor="#FFD6D6D6" padding="20,18,20,0" height="1" />
+				<HorizontalLayout height="51">
+					<Label text="新消息提醒音" float="true" pos="25,21,0,0" width="95" height="20" textcolor="#FF3e3e3e" />
+					<Option name="soundOption" float="true" pos="120,22,0,0" width="16" height="16" textcolor="#FF000000"
+					normalimage="Setting\Setting_CheckBox_Normal.png" hotimage="Setting\Setting_CheckBox_Hover.png" pushedimage="Setting\Setting_CheckBox_Normal.png"
+					selectedimage="Setting\Setting_CheckBox_Click.png" disabledimage="Setting\Setting_CheckBox_Normal.png"/>
+					<Label text="开启" float="true" pos="140,21,0,0" width="40" height="20" textcolor="#FF3e3e3e" />
+				</HorizontalLayout>
+				<HorizontalLayout height="45">
+					<Label text="发送消息快捷键" float="true" pos="25,6,0,0" width="95" height="20" textcolor="#FF3e3e3e" />
+					<mmCombo name="sendCombo"  float="true" pos="120,3,0,0" width="110" height="26" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" itemalign="left" itemfont="0" textpadding="10,0,0,0"
+					normalimage="file='Profile\Setting_Combox_Normal.png' corner='5,5,25,10'" hotimage="file='Profile\Setting_Combox_Hover.png' corner='5,5,25,10'" pushedimage="file='Profile\Setting_Combox_Click.png' corner='5,5,25,10'" 
+					combowndbkimage="file='Profile\Setting_Combox_List_BG.png' corner='10,10,10,10'"
+					itemhotbkcolor="#FFF1F1F1" itemselectedbkcolor="#FFF1F1F1" >
+						<mmComboListContainerElement height="26" text="Ctrl + Enter" selected="true">
+							<!--<Label name="imgLab" float="true" pos="2,1,0,0" height="24" width="24" bkimage="Setting\Setting_Combox_List_icon.png" visible="false"/>-->
+							<Label name="textLab" float="true" text="Ctrl + Enter" pos="9,0,0,0" height="26" width="142" textcolor="#FF000000"/>
+						</mmComboListContainerElement>
+						<mmComboListContainerElement height="26" text="Enter" >
+							<!--<Label name="imgLab" float="true" pos="2,1,0,0" height="24" width="24" bkimage="Setting\Setting_Combox_List_icon.png" visible="false"/>-->
+							<Label name="textLab" float="true" text="Enter" pos="9,0,0,0" height="26" width="142" textcolor="#FF000000"/>
+						</mmComboListContainerElement>
+					</mmCombo>
+				</HorizontalLayout>
+				<Control bkcolor="#FFD6D6D6" padding="20,0,20,0" height="1" />
+				<Button name="feedbtn" text="意见反馈" padding="20,25,20,0" height="42" font="2"
+				normalimage="file='Common\Btn_White.png' corner='5,10,5,10'" hotimage="file='Common\Btn_White_Hover.png' corner='5,10,5,10'" pushedimage="file='Common\Btn_White_Click.png' corner='5,10,5,10'" />
+				<Button name="logoutbtn" text="退出登录" padding="20,10,20,0" height="42" font="2" textcolor="#FFFFFFFF"
+				normalimage="file='Common\Btn_Red.png' corner='5,10,5,10'" hotimage="file='Common\Btn_Red_Hover.png' corner='5,10,5,10'" pushedimage="file='Common\Btn_Red_Click.png' corner='5,10,5,10'" />
+			</VerticalLayout>
+			<Control />
+			<!--<Text name="copyrightLab" text="" padding="0,0,0,0" width="310" height="70" align="center" endellipsis="true" textcolor="#FF919191"/>-->
+			<HorizontalLayout height="60">
+				<Label name = "versionName" float="true" pos="20,0,0,0" width="100" height="16" textcolor="#FF919191"/>
+				<Label text="腾讯公司 版权所有" float="true" pos="20,26,0,0" width="100" height="16" textcolor="#FF919191"/>
+				<mmButton name="clauseBtn" text="使用条款" textcolor="#FF0066cc" float="true" pos="180,26,0,0" width="50" height="16" align="center"/>
+				<mmButton name="rightsBtn" text="权利声明" textcolor="#FF0066cc" float="true" pos="240,26,0,0" width="50" height="16" align="center"/>
+			</HorizontalLayout>
+		</VerticalLayout>
+	</VerticalLayout>
+</Window>

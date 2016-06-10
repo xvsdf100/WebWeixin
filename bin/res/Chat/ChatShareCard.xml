@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<ChatItem>   		
+		<Container width="200" height="90">
+			<HeadImgUI name="imgHeadCardUser" float="true" pos="10,20,0,0" width="60" height="60"  />		        
+			<Label name="txtTitle" text="名片" float="true" pos="10,0,0,0" width="180" height="20" font="1"  endellipsis="true" />
+			<Label name="txtNick" float="true" pos="80,26,0,0" width="120" height="20" font="1"  endellipsis="true" />		        
+			<Label name="txtUserName" float="true" pos="80,47,0,0" width="120" height="20" endellipsis="true" />     			
+		</Container>		
+</ChatItem>   
+

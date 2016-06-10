@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Window>
+  <ContactListGroupItemUI>
+        <VerticalLayout height="20" inset="5,0,0,0" bkcolor="#FFfafafa">
+            <Label name="nickname" bordersize="0" width="120" textcolor="#FFa9a9a9" />
+        </VerticalLayout>
+  </ContactListGroupItemUI>
+</Window>

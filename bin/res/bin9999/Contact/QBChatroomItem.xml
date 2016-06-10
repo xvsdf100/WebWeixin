@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Window>
+<QBChatroomItemUI name="itemRoot"  height="90" padding="0,0,0,0" width="70">
+	<HorizontalLayout width="70" height="55"  >
+		<Control float="false" />
+		<HeadImgUI float="false"  name="headBtn" width="50" height="50"/>
+		<Button name="addBtn" visible="false" width="50" height="50" normalimage="Contact\Chat_Member_AddMember_Icon.png" pushedimage="Contact\Chat_Member_AddMember_Icon_Hover.png" hotimage="Contact\Chat_Member_AddMember_Icon_Hover.png"/>
+		<Control float="false" />
+	</HorizontalLayout>
+	<HorizontalLayout width="70" height="20">
+		<Label name="txtName" bordersize="0" padding="2,0,2,0" align="center"  font="0" textcolor="#FF5e5e5e" disabledtextcolor="#FF808080" endellipsis="true" />
+	</HorizontalLayout>
+</QBChatroomItemUI>
+</Window>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="370,200" caption="0,0,0,45">
+	<Font name="微软雅黑" size="12" bold="false" default="true" />
+	<Font name="微软雅黑" size="12" bold="true"/>
+	<Font name="微软雅黑" size="14" bold="false" />
+	<VerticalLayout name="mainLayout">
+    <VerticalLayout bkimage="file='Main\imgs\Windows_BG.png' corner='20,40,20,40'">
+		<HorizontalLayout width="370" height="80">
+			<Label name="titleLab" float="true" pos="15,10,0,0" width="160" height="20" disabledtextcolor="#FFA7A6AA" font="2" textcolor="#FF000000"/>
+			<Button name="closebtn" float="true" pos="340,10,0,0" width="18" height="18" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center"
+			 normalimage="file='chatroom\TopBar_Close_Btn.png'" hotimage="chatroom\TopBar_Close_Btn_Hover.png" pushedimage="chatroom\TopBar_Close_Btn_Click.png" tooltip="关闭" />
+		</HorizontalLayout>
+		<!---<VerticalLayout height="50">-->
+		<Text text="" name="contentLab" padding="35,0,35,0" textcolor="#FF3E3E3E" disabledtextcolor="#FFA7A6AA" font="2"/>
+			<!---<Text text="哈哈哈" name="contentLab"  float="true" pos="50,35,0,0" width="300" height="50" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" font="2"/>-->
+        <!---</VerticalLayout>-->
+		<HorizontalLayout>
+			<Button text="确定" name="okbtn"  float="true" pos="190,40,0,0" width="80" height="30" textcolor="#FF3E3E3E" disabledtextcolor="#FFB3B3B3" align="center" font="2"
+			normalimage="file=&apos;chatroom\Dialog_Btn1.png&apos; corner=&apos;5,10,5,10&apos;" hotimage="file=&apos;chatroom\Dialog_Btn1_Hover.png&apos; corner=&apos;5,10,5,10&apos;" pushedimage="file=&apos;chatroom\Dialog_Btn1_Click.png&apos; corner=&apos;5,10,5,10&apos;" />
+			<Button text="取消" name="cancelbtn"  float="true" pos="280,40,0,0" width="80" height="30" textcolor="#FF3E3E3E" disabledtextcolor="#FFB3B3B3" align="center" font="2" 
+			normalimage="file=&apos;chatroom\Dialog_Btn1.png&apos; corner=&apos;5,10,5,10&apos;" hotimage="file=&apos;chatroom\Dialog_Btn1_Hover.png&apos; corner=&apos;5,10,5,10&apos;" pushedimage="file=&apos;chatroom\Dialog_Btn1_Click.png&apos; corner=&apos;5,10,5,10&apos;" />
+        </HorizontalLayout>
+    </VerticalLayout>
+	</VerticalLayout>
+</Window>

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Window>
+  <ListContainerElement>
+        <HorizontalLayout  height="60" padding="10,10,10,10" bkimage="file=&apos;Main\imgs\bubble.png&apos; corner=&apos;12,26,12,5&apos;">
+			<RichEdit name="chat_richedit" multiline="true"  rich="true"  padding="10,10,10,10" readonly="true" />
+		  </HorizontalLayout>
+  </ListContainerElement>
+</Window>

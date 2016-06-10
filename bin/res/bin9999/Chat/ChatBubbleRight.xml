@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<ChatItem>   	
+	<HorizontalLayout>
+		<Control />				    	  
+		<Picture name="chatStatus" width="24" height="24"  align="center" padding="0,0,10,0" visible="false" userdata="Common\loading_14.gif  chat\chat_msg_failed.png" />
+		<BubbleFrame name="chatContent" height="38" padding="0,10,0,10" inset="12,13,16,12"  menu="true" bkimage="file='chat\Chat_MyselfBubble.png' corner='12,30,14,10'"  hotimage="file='chat\Chat_MyselfBubble_Hover.png' corner='12,28,14,10'" pushedimage="file='chat\Chat_MyselfBubble_Active.png' corner='12,30,14,10'" >
+           	<Button name="chatEventBtn" menu="true" />	 
+		</BubbleFrame>
+		<HeadImgUI name="HeadIcon" width="34" height="34" padding="10,15,18,10"  borderround="1,1"  />						
+	</HorizontalLayout>	    
+</ChatItem>   

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Window>
+        <HorizontalLayout height="50" inset="10,10,10,10" >
+          <HeadImgUI name="logo" width="30" height="30" mouse="false" recycle="true"/>
+          <VerticalLayout >
+              <UIListLabel name="nickname" bordersize="0" textcolor="#FF5e5e5e" disabledtextcolor="#FF808080" endellipsis="true" padding="10,5,0,0" selectedtextcolor="#FFFFFFFF" />
+          </VerticalLayout>
+        </HorizontalLayout>
+</Window>

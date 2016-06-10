@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="400,250" caption="0,0,0,35">
+	<Font name="微软雅黑" size="12" bold="false" default="true" />
+	<Font name="微软雅黑" size="12" bold="true"/>
+	<Font name="微软雅黑" size="14" bold="true"/>
+	<Font name="微软雅黑" size="14" bold="false"/>
+	<Default name="VScrollBar" value="scrollbarsize=&quot;9&quot; scrollbarfloat=&quot;true&quot; button1normalimage=&quot;file='common\scrollbar.png' source='0,28,9,37'&quot; button1hotimage=&quot;file='common\scrollbar.png' source='9,28,18,37'&quot; button1pushedimage=&quot;file='common\scrollbar.png' source='9,28,18,37'&quot; button2normalimage=&quot;file='common\scrollbar.png' source='0,37,9,46'&quot; button2hotimage=&quot;file='common\scrollbar.png' source='9,37,18,46'&quot; button2pushedimage=&quot;file='common\scrollbar.png' source='9,37,18,46'&quot; thumbnormalimage=&quot;file='common\scrollbar.png' source='0,0,9,8' corner='0,3,0,3'&quot; thumbhotimage=&quot;file='common\scrollbar.png' source='9,0,18,8' corner='0,3,0,3'&quot; thumbpushedimage=&quot;file='common\scrollbar.png' source='18,0,27,8' corner='0,3,0,3'&quot; bknormalimage=&quot;file='common\scrollbar.png' source='27,0,36,28' corner='0,14,0,12'&quot;"/>
+    <VerticalLayout bkimage="file='Main\imgs\Windows_BG.png' corner='20,40,20,40'" >
+        <HorizontalLayout width="400" height="40">
+            <Label text="意见反馈" float="true" pos="14,4,0,0" width="100" height="30" font="2" textcolor="#FF000000"/>
+            <Button name="closebtn" float="true" pos="370,10,0,0" width="18" height="18" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center"
+			 normalimage="file='chatroom\TopBar_Close_Btn.png'" hotimage="chatroom\TopBar_Close_Btn_Hover.png" pushedimage="chatroom\TopBar_Close_Btn_Click.png" tooltip="关闭" />
+		</HorizontalLayout>
+        <HorizontalLayout width="400" height="160">
+            <MMRichEdit name="contendEdit" float="true" pos="0,0,0,0" inset="4,3,4,3" width="398" height="160" multiline="true" vscrollbar="true" autovscroll="true" wantreturn="true" textcolor="#FF000000" bkcolor="#FFFFFFFF"/>
+		</HorizontalLayout>
+		<Control bkcolor="#FFBEBEBE" height="1" />
+        <HorizontalLayout width="400" height="49" bkcolor="#FFF2F2F2">
+			<Button text="确定" name="okbtn" font="3" float="true" pos="210,8,0,0" width="80" height="38" textcolor="#FFFFFFFF" disabledtextcolor="#FFB3B3B3" align="center" 
+			normalimage="file='common\Btn_Green.png' corner='5,10,5,10'" hotimage="file='common\Btn_Green_Hover.png' corner='5,10,5,10'" pushedimage="file='common\Btn_Green_Click.png' corner='5,10,5,10'" disabledimage="file='common\Btn_NotClick.png' corner='5,10,5,10'"/>
+			<Button text="取消" name="cancelbtn" font="3" float="true" pos="300,8,0,0" width="80" height="38" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" 
+			normalimage="file='common\Btn_White.png' corner='5,10,5,10'" hotimage="file='common\Btn_White_Hover.png' corner='5,10,5,10'" pushedimage="file='common\Btn_White_Click.png' corner='5,10,5,10'" />
+		</HorizontalLayout>
+    </VerticalLayout>
+</Window>

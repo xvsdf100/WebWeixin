@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="560,450" caption="0,0,0,39" mininfo="900,660" roundcorner="2,2">
+    <Font name="微软雅黑" size="12" bold="false" italic="false" default="true" />
+    <Font name="微软雅黑" size="14" bold="false" italic="false" />
+	<Default name="VScrollBar" value="scrollbarsize=&quot;9&quot; scrollbarfloat=&quot;true&quot; button1normalimage=&quot;file='common\scrollbar.png' source='0,28,9,37'&quot; button1hotimage=&quot;file='common\scrollbar.png' source='9,28,18,37'&quot; button1pushedimage=&quot;file='common\scrollbar.png' source='9,28,18,37'&quot; button2normalimage=&quot;file='common\scrollbar.png' source='0,37,9,46'&quot; button2hotimage=&quot;file='common\scrollbar.png' source='9,37,18,46'&quot; button2pushedimage=&quot;file='common\scrollbar.png' source='9,37,18,46'&quot; thumbnormalimage=&quot;file='common\scrollbar.png' source='0,0,9,8' corner='0,3,0,3'&quot; thumbhotimage=&quot;file='common\scrollbar.png' source='9,0,18,8' corner='0,3,0,3'&quot; thumbpushedimage=&quot;file='common\scrollbar.png' source='18,0,27,8' corner='0,3,0,3'&quot; bknormalimage=&quot;file='common\scrollbar.png' source='27,0,36,28' corner='0,14,0,12'&quot;"/>
+	<VerticalLayout >
+		<VerticalLayout inset="1,1,1,1" bkimage="file='chatroom\Dialog_BG2.png' corner='15,50,15,60'">
+		<HorizontalLayout height="38">
+			<Label name="title_label"text="选择联系人" textcolor="#FF494949" align="left" padding="10,10,0,0" font="1" />
+            <Button name="close_btn" width="18" height="18" padding="0,7,7,0" normalimage="file='chatroom\TopBar_Close_Btn.png'" hotimage="chatroom\TopBar_Close_Btn_Hover.png" pushedimage="chatroom\TopBar_Close_Btn_Click.png" tooltip="关闭" />
+		</HorizontalLayout>
+		<HorizontalLayout  padding="0,0,0,0">
+			<VerticalLayout width="280">
+				<Container height="39" inset="9,7,9,7" bkcolor="#FFf2f2f2">
+					<Control bkimage="file='chatroom\search_bar_bg.png'" />
+					<Label  name="ctrlSearchBg" text="搜索" textpadding="24,3,4,3" textcolor="#FFA7A6AA" font="0"/>
+					<UISearchEdit name="search_bar" float="true" pos="28,8,250,34" bkcolor="#00000000" textcolor="#FF000000" />
+					<Button name="btnCancelSearch" visible="false"  float="true" pos="248,11,18,18"  width="18" height="18"  normalimage="file='Common\Cancel_btn_icon_Normal.png'" hotimage="Common\Cancel_btn_icon_Hover.png" pushedimage="Common\Cancel_btn_icon_Click.png"/>
+                </Container>
+				<Control height="1" bkcolor="#FFbdbdbd" />
+				<MMListUI name="add_friend_list" header="hidden"  vscrollbar="true" itembkimage="chatroom\AddChatList_BG.png" itemhotimage="chatroom\AddChatList_BG_Hover.png" itemselectedimage="chatroom\AddChatList_BG_Click.png"/>
+				<MMListUI name="add_search_list" header="hidden"  vscrollbar="true" visible="false" itembkimage="chatroom\AddChatList_BG.png" itemhotimage="chatroom\AddChatList_BG_Hover.png" itemselectedimage="chatroom\AddChatList_BG_Click.png"/>
+			</VerticalLayout>
+			<Control width="1" bkcolor="#FFbdbdbd" />
+			<VerticalLayout >
+				<Label height="39" text="已选择的联系人" textcolor="FF888888" textpadding="15,0,0,0" bkcolor="#FFf2f2f2"/> 
+				<Control height="1" bkcolor="#FFbdbdbd" />
+				<MMListUI name="selected_list" header="hidden" vscrollbar="true" itemlineheight="1" itemlinecolor="#FFEDEDED" itembkcolor="#FFFFFFFF" itemhotbkcolor="#FFFFFFFF" itemselectedbkcolor="#FFFFFFFF"/>
+			</VerticalLayout>
+		</HorizontalLayout>
+        <HorizontalLayout  height="50">
+			<Label name="txtAddedCnt" padding="16,0,0,0" textcolor="FF8e8e8e"/>
+			<Button text="确定" name="ok_btn" width="84" height="38" padding="0,6,8,0"  disabledtextcolor="0xFF7d7d7d"  textcolor="#FFFFFFFFFF" font="1" align="center" 
+			normalimage="file='common\Btn_Green.png'  corner='5,10,5,10'" hotimage="file='common\Btn_Green_Hover.png' corner='5,10,5,10'" pushedimage="file='common\Btn_Green_Click.png' corner='5,10,5,10'" disabledimage="file='common\Btn_NotClick.png' corner='5,10,5,10'"/>
+			<Button text="取消" name="cancel_btn" width="84" height="38 " padding="0,6,10,0" textcolor="#FF000000" font="1" align="center"  
+			normalimage="file='common\Btn_White.png' corner='5,10,5,10'" hotimage="file='common\Btn_White_Hover.png' corner='5,10,5,10'" pushedimage="file='common\Btn_White_Click.png' corner='5,10,5,10'" />
+        </HorizontalLayout>
+		<HorizontalLayout name="progress_layout" bkcolor="#AA000000" float="true" pos="0,38,560,450" visible="false" >
+			<Control />
+			<VerticalLayout width="24">
+				<Control />
+				<ProgressFlower  name="loadingLab"  width="24" height="24" visible="true"   elapse="20" framewidth="24" frameheight="24" framecount="30" bkimage="Common\load_flower.png"/>
+				
+				<Control />
+			</VerticalLayout>
+			<Control />
+		</HorizontalLayout>
+    </VerticalLayout>
+	</VerticalLayout>
+</Window>

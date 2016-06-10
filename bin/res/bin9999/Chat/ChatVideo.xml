@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<ChatItem>
+	<HorizontalLayout width="60" height="80">
+		<Picture name="thumb_pic" width="60" height="80" align="center" bkimage="" userdata="Common\loading.gif"/>
+		<Label name="playIcon" float="true" pos="15,25,45,55" bkimage="Chat\video_icon.png" />
+		<Label name="time_len" float="true" pos="0,63,60,80" text="00:15" align="right" textcolor="#FFFFFFFF" bkimage="Chat\chat_video_bg.png" textpadding="0,0,2,0"/>
+	</HorizontalLayout>
+</ChatItem>   
+

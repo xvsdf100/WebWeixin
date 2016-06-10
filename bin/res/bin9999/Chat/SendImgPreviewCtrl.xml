@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Window>
+<SendImgPreviewCtrl height="250" width="250"  padding="0,0,0,0" bordercolor="#FFe6e6e6" bordersize="1" >
+	<Picture name="imgContent"  height="250" width="250" visible="false"/>
+	<Control name="file_icon" padding="40,40,0,0" height="170" width="170" bkimage="test\file_icon.png" />
+	<Label name="file_name" height="30" align="center" text="123.png"/>
+</SendImgPreviewCtrl >
+</Window>

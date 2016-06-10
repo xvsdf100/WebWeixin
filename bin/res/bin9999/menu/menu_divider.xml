@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Window>
+	<HorizontalLayout height="3">
+	  <Control bkcolor="#FFededed" padding="32,1,6,1"/>
+	</HorizontalLayout>
+</Window>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<ChatItem>  	
+	   <Picture name="content" align="center" bkimage="" minheight="40" minwidth ="40"  maxheight="80"  maxwidth="80" userdata="Common\loading.gif" bkimage="Chat\appshareimage_icon.png"/>	        	    	 	
+</ChatItem>   
+

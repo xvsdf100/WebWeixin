@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Window roundcorner="2,2">
+	<ContactMenuElementUI height="33" >
+		<HorizontalLayout inset="5,5,5,5">
+			<HeadImgUI name="logo" width="22" height="22" mouse="false" recycle="true"/>
+			<mmLabel name="text" width="120" padding="6,2,20,0" mouse="false" textcolor="#FF353535" endellipsis="true" selectedtextcolor="#FF000000" hottextcolor="#FF000000"/>
+		</HorizontalLayout>
+	</ContactMenuElementUI>
+</Window>

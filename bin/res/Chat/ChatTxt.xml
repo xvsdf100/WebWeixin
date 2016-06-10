@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<ChatItem>  	
+	 <EmotionText  minwidth="25" minheight="17" maxwidth= "160" textcolor="#00232323"  font="2" align="center"  />	
+</ChatItem>

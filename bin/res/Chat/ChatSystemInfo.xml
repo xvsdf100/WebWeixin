@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<ChatItem>  
+		<HorizontalLayout>
+			<HorizontalLayout />
+			<Text name="content" padding="0,10,0,10" textpadding="5,1,5,0" maxwidth="200" textcolor="#ffffffff" endellipsis="true" showhtml="true" bkimage="file='Chat\Chat_Remark_BG.png' corner='5,5,5,5'"/>
+			<HorizontalLayout />
+		</HorizontalLayout>	
+</ChatItem>  

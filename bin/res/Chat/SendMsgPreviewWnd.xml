@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="480,320" caption="0,0,0,35" roundcorner="6,6">
+	<Font name="微软雅黑" size="12" bold="false" default="true" />
+	<Font name="微软雅黑" size="12" bold="true"/>
+	<Font name="微软雅黑" size="14" bold="true"/>
+	<Font name="微软雅黑" size="14" bold="false"/>
+    <VerticalLayout width="480" height="389" bkcolor="#FFFCFCFC" bordercolor="#FF999999" bordersize="2" inset="1,1,1,1">
+       
+        <HorizontalLayout name="panelDisplayCtrl" padding="0,18,0,0"  width="480" height="0" >
+			<Control />
+			<Control />
+		</HorizontalLayout>
+        <HorizontalLayout padding="0,18,0,0" float="true" pos="0,279,0,0" width="480" height="53">
+			<Control />
+			<Button text="发 送" name="btnOk" font="2" pos="290,10,0,0" width="80" height="30" textcolor="#FFFFFFFFFF" disabledtextcolor="#FFA7A6AA" align="center" 
+			normalimage="file=&apos;Main\imgs\Dialog_Btn3.png&apos; corner=&apos;5,10,5,10&apos;" hotimage="file=&apos;Main\imgs\Dialog_Btn3_Hover.png&apos; corner=&apos;5,10,5,10&apos;" pushedimage="file=&apos;Main\imgs\Dialog_Btn3_Click.png&apos; corner=&apos;5,10,5,10&apos;" />
+			<Button text="取 消" name="btnCancel" font="2" padding="50,0,0,0" pos="380,10,0,0" width="80" height="30" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" 
+			normalimage="file=&apos;Main\imgs\Dialog_Btn1.png&apos; corner=&apos;5,10,5,10&apos;" hotimage="file=&apos;Main\imgs\Dialog_Btn1_Hover.png&apos; corner=&apos;5,10,5,10&apos;" pushedimage="file=&apos;Main\imgs\Dialog_Btn1_Click.png&apos; corner=&apos;5,10,5,10&apos;" />
+			<Control />
+		</HorizontalLayout>
+    </VerticalLayout>
+</Window>

@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="250,330" caption="0,0,0,35" maxinfo="300,340">
+	<Font name="微软雅黑" size="12" bold="false" default="true" />
+	<Font name="微软雅黑" size="16" bold="false"/>
+	<Font name="微软雅黑" size="14" bold="false"/>
+	<Font name="微软雅黑" size="21" bold="false"/>
+    <VerticalLayout width="250" height="330" bkimage="file='Login\Login_BG.png' corner='8,10,8,10'" bkcolor="#FFAAAAAA">
+		<HorizontalLayout width="300" padding="1,0,0,0" height="40">
+			<Label name="titleLab" text="微信" float="true" pos="10,9,0,0" width="160" height="20" textcolor="#FF949494" disabledtextcolor="#FFA7A6AA"  font="1"/>
+			<!---<Button name="minbtn" float="true" pos="194,8,0,0" width="22" height="22" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="Login\Login_TopBar_Narrow_Btn.png" hotimage="Login\Login_TopBar_Narrow_Btn_Hover.png" pushedimage="Login\Login_TopBar_Narrow_Btn_Click.png" />-->
+			<Button name="closebtn" float="true" pos="218,8,0,0" width="22" height="22" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="Login\Login_TopBar_Close_Btn.png" hotimage="Login\Login_TopBar_Close_Btn_Hover.png" pushedimage="Login\Login_TopBar_Close_Btn_Click.png" tooltip="关闭"/>
+		</HorizontalLayout>
+		<TabLayout width="250" height="230" name="qrcodeTab">
+			<!--- 登录二维码 -->
+			<HorizontalLayout float="true" pos="24,14,0,0" width="202" height="202" visible = "false"  bkimage="file='Login\Login_QRCode_BG.png' corner='10,10,10,10'">
+				<Picture name="qrcodeLab" float="true" pos="8,8,0,0" width="186" height="186" disabledtextcolor="#FFA7A6AA" visible="true"/>
+				<HorizontalLayout width="202" height="202" bkcolor="#AA252525" name="refreshCover">
+					<Button pos="69,85,0,0" float="true" width="74" height="32" name="refreshBtn" text="刷新"
+					normalimage="file='Login\Btn_Login_Refresh.png' corner='8,10,8,10'" hotimage="file='Login\Btn_Login_Refresh_Hover.png' corner='8,10,8,10'" pushedimage="file='Login\Btn_Login_Refresh_Click.png' corner='8,10,8,10'"/>
+				</HorizontalLayout>
+			</HorizontalLayout>
+			<!--- 登录菊花 -->
+			<ProgressFlower name="loadingcode" float="true" pos="113,108,0,0" width="24" height="24" visible = "true" elapse="20" framewidth="24" frameheight="24" framecount="30" bkimage="Common\load_flower.png"/>
+			<!--<Picture name="loadingcode" float="true" pos="9,4,0,0" width="232" height="232" align="center" visible = "false" bkimage="Common\loading.gif"/>-->
+			<!--- 登录头像 -->
+			<HorizontalLayout width="250" height="230" visible = "false">
+				<Label name="picLabel" float="true" pos="75,18,0,0"  width="100" height="100" bkimage="Login\Login_HeadShowDefault.png" borderround="90,90"/>
+				<MMHttpImage name="headHttpImg" float="true" pos="75,18,0,0"  width="100" height="100" borderround="90,90" visible="false"/>
+				<Label float="true" pos="71,14,0,0"  width="108" height="109" bkimage="Login\Login_HeadShow_BG1.png"/>
+				<Label text="扫描成功" float="true" pos="50,138,0,0"  width="150" height="22" align="center" textcolor="#FFFFFFFF" font="3" />
+				<Label text="请在手机点击确认以登录" float="true" pos="20,170,0,0"  width="210" height="15" align="center" textcolor="#FF848484" font="2" />
+			</HorizontalLayout>
+			<!--- 二维码获取失败 -->
+			<HorizontalLayout name="qrcodeErr" float="true" pos="0,4,0,0" width="232" height="232" visible = "false">
+				<!--- <Label float="true" pos="16,106,0,0" height="19" width="19" bkimage="Login\failed.png"/> -->
+				<Text text="无法获取你的二维码,请重新检查你的网络连接" float="true" pos="35,98,0,0" height="40" width="180" textcolor="#FF848484"/>
+			</HorizontalLayout>
+		</TabLayout>
+		<TabLayout width="250" height="60" name="tipTab">
+			<!--- 登录提示语 -->
+			<Label name="wechatTipLab" float="true" pos="14,0,0,0" width="220" height="30" textcolor="#FF848484" align="center" text="请使用微信的扫一扫以登录" font="2"/>
+			<!--- 返回二维码登录操作 -->
+			<Button name="qrcodeBackBtn" float="true" pos="65,5,0,0" width="120" height="20" textcolor="#FF436895" align="center" text="返回扫二维码登录" font="2"/>
+			<!--- 登录中菊花 -->
+			<HorizontalLayout name="loadingLayout" float="true" pos="10,0,0,0" width="220" height="30" >
+			
+				<ProgressFlower name="loadingLab" float="true" pos="65,3,0,0" width="24" height="24" visible = "true" elapse="20" framewidth="24" frameheight="24" framecount="30" bkimage="Common\load_flower.png"/>
+				<Label name="loginingLab" float="true" pos="95,4,0,0" width="120" height="30" textcolor="#FF848484" align="left" text="正在登录…" font="2"/>
+			</HorizontalLayout>
+			<!--- 验证码失效 -->
+			<Label name="freshTxt" float="true" pos="20,0,0,0" width="210" height="30" textcolor="#FF949494" align="center" text="二维码失效，请刷新以登陆" font="2"/>
+			<!--- 获取失败 -->
+			<Button name="retryBtn" float="true" pos="75,5,0,0" width="100" height="20" textcolor="#FF436895" valign="center" align="center" text="重新获取二维码 " font="2"/>
+		</TabLayout>
+	</VerticalLayout>
+</Window>

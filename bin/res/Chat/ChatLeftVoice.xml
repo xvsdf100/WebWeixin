@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<ChatItem>    
+			<HorizontalLayout width="80" height="44" >										
+				<Picture name="playAni" width="28" height="19" visble="false" userdata="chat\Chat_left_Voice_Icon.png chat\Chat_left_Voice_Icon.gif chat\voice_unplay_dot.png" padding="-3,0,0,0"/>	
+				<Control />
+				<Label name="timeLengthLab" text="test" font="0" width="20" align="center" textcolor="#4F4FAF"/>
+	    </HorizontalLayout>	      	    
+</ChatItem>   
+

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<ChatItem>   	
+	<HorizontalLayout name="HChatLaout"  >
+		<Control name="HeadIcon" width="34" height="34" padding="10,15,10,10"  borderround="1,1" bkimage="file='Main\default.png'"/>
+		<VerticalLayout name="appLayout"  >		
+		<Container name="chatContentLayout"  height="38" padding="0,10,0,0" inset="16,13,12,12"   menu="true" bkimage="file='chat\Chat_FriendBubble.png' corner='12,30,12,10'" hotimage="file='chat\Chat_FriendBubble_Hover.png' corner='12,30,12,10'" pushedimage="file='chat\Chat_FriendBubble_Active.png' corner='12,30,12,10'">
+			<RichEdit name="chatContent" text="测试内容111111111111222222222" multiline="true"  readonly="true"  />
+			<!-- <Button name="chatEventBtn" menu="true"  visible="false"/>	  -->
+		</Container>
+		</VerticalLayout>
+		<Control name="chatStatus" width="34" height="34" padding="-5,0,0,0" align="center" visible="false" userdata="Common\loading_14.gif  chat\chat_msg_failed.png" /> 	        	         
+		<Control />
+	</HorizontalLayout>	    
+</ChatItem>   

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chatView>
+	<VerticalLayout name="chat_layout" visible="true">
+		<Container height="34" bkcolor="#FFf5f5f5">
+			<HeadImgUI name="talkerIcon" width="40" height="40" bkimage="file='Main\imgs\default_icon.jpg'" padding="10,10,10,10" recycle="false" visible="false"/>
+			<Label name="talkerName" text="" textpadding="70,0,70,5" bordersize="0" textcolor="#FF000000" disabledtextcolor="#FF808080" font="2" endellipsis="true" align="center" padding="10,0,10,0" />
+			<HorizontalLayout inset="0,0,7,0">
+				<Control />
+				<Button name="chat_member_btn" width="24" height="25" padding="0,4,0,0" normalimage="Main\imgs\ChatMember_Btn.png" pushedimage="Main\imgs\ChatMember_Btn_Active.png" hotimage="Main\imgs\ChatMember_Btn_Hover.png" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" tooltip="聊天成员"/>
+				<Button name="chat_members_btn" width="24" height="25" padding="0,4,0,0" normalimage="Main\imgs\ChatMembers_Btn.png" pushedimage="Main\imgs\ChatMembers_Btn_Active.png" hotimage="Main\imgs\ChatMembers_btn_hover.png" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" tooltip="聊天成员"/>
+			</HorizontalLayout>
+		</Container>
+		<Control height="1" padding="0,0,0,0" bkcolor="#FFd6d6d6" />       
+		<HorizontalLayout>         				
+			<ChatView  header="hidden" inset="5,0,0,0" name="chatlist" itemselectedbkcolor="#0" itemhotbkcolor="#0" bkcolor="#FFFFFFFF" vscrollbar="true" />	
+			<HorizontalLayout name="chatTipBar" float="true" height="30" visible="false">
+				<Button name="chatTipText" textcolor="FF000000" align="center" normalimage="Main\imgs\Chat_infoBar_bottom_normal.png" pushedimage="Main\imgs\Chat_infoBar_bottom_hover.png" hotimage="Main\imgs\Chat_infoBar_bottom_hover.png"/>
+				<Button name="chatTipCloseBtn" width="16" height="16" float="true" normalimage="Main\imgs\Chat_TopBar_Close_Btn.png" hotimage="Main\imgs\Chat_TopBar_Close_Btn_Active.png" pushedimage="Main\imgs\Chat_TopBar_Close_Btn_Hover.png"/>
+			</HorizontalLayout>
+			<HorizontalLayout name="atMeTipBar" float="true" height="30" visible="false">
+				<Button name="atMeTipText" textcolor="FF000000" align="center" normalimage="Main\imgs\Chat_infoBar_bottom_normal.png" pushedimage="Main\imgs\Chat_infoBar_bottom_hover.png" hotimage="Main\imgs\Chat_infoBar_bottom_hover.png"/>
+				<Button name="atMeTipCloseBtn" width="16" height="16" float="true" normalimage="Main\imgs\Chat_TopBar_Close_Btn.png" hotimage="Main\imgs\Chat_TopBar_Close_Btn_Active.png" pushedimage="Main\imgs\Chat_TopBar_Close_Btn_Hover.png"/>
+			</HorizontalLayout>
+		</HorizontalLayout>
+		<!--<Control height="1" bkcolor="#FFCDD2D7" />   -->
+		
+		<Dragable height="1" name="chatDrag" bkcolor="#FFD6D6D6" />
+		<VerticalLayout name="chat_bottom_layout" height="187" bkimage="file='ChatView\Chat_BottomBar_BG.png' corner='5,30,5,10' source='0,1,20,111'">
+			<HorizontalLayout name="chat_tools" height="29">						
+				<Button name="emotionBtn" tooltip="表情" padding="4,0,0,0" width="32" height="29" 
+				normalimage="ChatView\Chat_Expression_Icon.png"  hotimage="ChatView\Chat_Expression_Icon_Hover.png"  pushedimage="ChatView\Chat_Expression_Icon_Active.png" />
+				<SnapShotBtn name="screenCaptureBtn" tooltip="截图" padding="0,0,0,0" width="44" height="29" align="center" 
+				normalimage="ChatView\Chat_Screenshot_Icon.png"  hotimage="ChatView\Chat_Screenshot_Icon_Hover.png"  pushedimage="ChatView\Chat_Screenshot_Icon_Active.png" />
+				<Button name="sendFileBtn" tooltip="发送文件" padding="0,0,0,0" width="32" height="29" 
+				normalimage="ChatView\Chat_SendFile_Icon.png" hotimage="ChatView\Chat_SendFile_Icon_Hover.png"  pushedimage="ChatView\Chat_SendFile_Icon_Active.png"/>
+			</HorizontalLayout>
+			<Control bkcolor="#FFD6D6D6" height="1" />
+			<HorizontalLayout bordercolor="#FFD6D6D6" bordersize="0,1,0,1">
+				<ChatRichInput name="input_richedit" menu="true" multiline="true" vscrollbar="true" autovscroll="true" enabled="true" rich="false" readonly="false" wantreturn="true" wantctrlreturn="false" inset="4,4,4,4"
+				bkcolor="#FFFFFFFF" font="2"/>
+			</HorizontalLayout>
+			<Control bkcolor="#FFD6D6D6" height="1" />
+			<HorizontalLayout name="chat_tools" height="45" inset="10,0,10,0" >
+				<Control />
+				<Button name="sendBtn" text="发送" width="80" height="40" padding="0,2,0,0" textcolor="#FF6F6F6F" disabledtextcolor="#FFA7A6AA" align="center" font="2"
+				normalimage="file='ChatView\Chat_Send_Btn.png' corner='5,10,5,10'" hotimage="file='ChatView\Chat_Send_Btn_Hover.png' corner='5,10,5,10'" pushedimage="file='ChatView\Chat_Send_Btn_Active.png' corner='5,10,5,10'" />
+			</HorizontalLayout>
+			<Label name="nodifyBubble" float="true" textcolor="#FF000000" pos="0,0,0,0" bkimage="file='ChatView\info-bubble.png' corner='10,10,45,20'" 
+			align="center" valign="top" height="48" textpadding="0,-7,0,0" width="100" visible="false"/>
+		</VerticalLayout>
+	</VerticalLayout>
+</chatView>

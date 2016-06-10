@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="460,472" caption="0,0,0,46">
+	<Font name="微软雅黑" size="12" bold="false"/>
+	<Font name="微软雅黑" size="12" bold="true"/>
+	<Font name="微软雅黑" size="14" bold="true"/>
+	<Font name="微软雅黑" size="14" bold="false" default="true" />
+	<Font name="微软雅黑" size="12" bold="false" underline="false"/>
+	<Default name="VScrollBar" value="scrollbarpadding=&quot;5&quot; scrollbarsize=&quot;6&quot; scrollbarfloat=&quot;true&quot; button1normalimage=&quot;file='Main\scrollbar.png' source='0,0,6,1'&quot; button1hotimage=&quot;file='Main\scrollbar.png' source='6,0,12,1'&quot; button1pushedimage=&quot;file='Main\scrollbar.png' source='12,0,18,1'&quot; button2normalimage=&quot;file='Main\scrollbar.png' source='0,2,6,3'&quot; button2hotimage=&quot;file='Main\scrollbar.png' source='6,2,12,3'&quot; button2pushedimage=&quot;file='Main\scrollbar.png' source='12,2,18,3'&quot; thumbnormalimage=&quot;file='Main\scrollbar.png' source='0,3,6,19' corner='0,3,0,3'&quot; thumbhotimage=&quot;file='Main\scrollbar.png' source='6,3,12,19' corner='0,3,0,3'&quot; thumbpushedimage=&quot;file='Main\scrollbar.png' source='12,3,18,19' corner='0,3,0,3'&quot; bknormalimage=&quot;file='Main\scrollbar.png' source='0,1,6,2'&quot;"/>
+    <VerticalLayout width="460" height="472" bkimage="file='Setting\Dialog_BG1.png' corner='20,40,20,40'">
+        <HorizontalLayout width="460" height="40">
+            <Label text="设置" float="true" pos="15,6,0,0" width="100" height="30" font="2" textcolor="#FF000000"/>
+			<Button name="closebtn" float="true" pos="426,8,0,0" width="24" height="24" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center"
+			normalimage="file='common\TopBar_Close_Btn.png'" hotimage="common\TopBar_Close_Btn_Hover.png" pushedimage="common\TopBar_Close_Btn_Click.png" tooltip="关闭" />
+		</HorizontalLayout>
+		<HorizontalLayout width="430" height="80" padding="15,0,15,0" bordercolor="#FFEAEAEA" bordersize="0,0,0,2">
+            <Label text="当前登录帐号:" float="true" pos="0,20,0,0" width="100" height="20" font="0" textcolor="#FF000000" align="right"/>
+            <Label name="headImg" float="true" pos="120,20,0,0" width="40" height="40"/>
+            <Label name="nickNameLab" float="true" pos="170,20,0,0" width="100" height="20" font="3" textcolor="#FF000000" valign="top"/>
+            <Label name="userNameLab" float="true" pos="170,40,0,0" width="160" height="20" textcolor="#FFA0A0A0" valign="top" font="0" endellipsis="true"/>
+			<Button text="退出登录" name="logoutbtn"  float="true" pos="335,20,0,0" width="90" height="40" textcolor="#FFFFFFFF" disabledtextcolor="#FFA7A6AA" align="center" 
+			normalimage="file='Setting\Btn_Red2.png' corner='5,10,5,10'" hotimage="file='Setting\Btn_Red2_Hover.png' corner='5,10,5,10'" pushedimage="file='Setting\Btn_Red2_Click.png' corner='5,10,5,10'" />
+		</HorizontalLayout>
+		<HorizontalLayout width="430" height="55" padding="15,0,15,0" bordercolor="#FFEAEAEA" bordersize="0,0,0,2">
+            <Label text="声音:" float="true" pos="0,19,0,0" width="100" height="20" font="0" textcolor="#FF000000" align="right"/>
+            <Option name="soundOption" float="true" pos="120,20,0,0" width="16" height="16" textcolor="#FF000000"
+			normalimage="Setting\Setting_CheckBox_Normal.png" hotimage="Setting\Setting_CheckBox_Hover.png" pushedimage="Setting\Setting_CheckBox_Normal.png"
+			selectedimage="Setting\Setting_CheckBox_Click.png" disabledimage="Setting\Setting_CheckBox_Normal.png"/>
+            <Label text="开启新消息提醒声音" float="true" pos="145,17,0,0" width="140" height="20" textcolor="#FF000000" />
+		</HorizontalLayout>
+		<HorizontalLayout width="430" height="170" padding="15,0,15,0" bordercolor="#FFEAEAEA" bordersize="0,0,0,2">
+			<mmCombo name="setsendbtn"  float="true" pos="120,20,0,0" width="170" height="30" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" itemalign="left" itemfont="3" textpadding="29,0,0,0"
+			normalimage="file='Setting\Setting_Combox_Normal.png' corner='10,10,35,10'" hotimage="file='Setting\Setting_Combox_Hover.png' corner='10,10,35,10'" pushedimage="file='Setting\Setting_Combox_Click.png' corner='10,10,35,10'" 
+			combowndbkimage="file='Setting\Setting_Combox_List_BG.png' corner='10,10,10,10'"
+			itemhotbkcolor="#FFF1F1F1" itemselectedbkcolor="#FFF1F1F1" >
+				<mmComboListContainerElement height="28" text="Ctrl + Enter" selected="true">
+					<Label name="imgLab" float="true" pos="2,2,0,0" height="24" width="24" bkimage="Setting\Setting_Combox_List_icon.png" visible="false"/>
+					<Label name="textLab" float="true" text="Ctrl + Enter" pos="28,0,0,0" height="28" width="142" textcolor="#FF000000"/>
+				</mmComboListContainerElement>
+				<mmComboListContainerElement height="28" text="Enter" >
+					<Label name="imgLab" float="true" pos="2,2,0,0" height="24" width="24" bkimage="Setting\Setting_Combox_List_icon.png" visible="false"/>
+					<Label name="textLab" float="true" text="Enter" pos="28,0,0,0" height="28" width="142" textcolor="#FF000000"/>
+				</mmComboListContainerElement>
+			</mmCombo>
+			<Button text="" name="setcamerabtn"  float="true" pos="120,71,0,0" width="170" height="30" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" font="3"
+			normalimage="file='Setting\Setting_InputBox_Normal.png' corner='5,10,5,10'" hotimage="file='Setting\Setting_InputBox_Hover.png' corner='5,10,5,10'" pushedimage="file='Setting\Setting_InputBox_Click.png' corner='5,10,5,10'" />
+			<Button text="" name="jumpmainbtn"  float="true" pos="120,122,0,0" width="170" height="30" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" font="3"
+			normalimage="file='Setting\Setting_InputBox_Normal.png' corner='5,10,5,10'" hotimage="file='Setting\Setting_InputBox_Hover.png' corner='5,10,5,10'" pushedimage="file='Setting\Setting_InputBox_Click.png' corner='5,10,5,10'" />
+            <Label text="会话中发送消息:" font="0" float="true" pos="0,25,0,0" width="100" height="20" textcolor="#FF000000" align="right"/>
+            <Label text="截取屏幕:" font="0" float="true" pos="0,76,0,0" width="100" height="20" textcolor="#FF000000" align="right"/>
+            <Label text="打开主界面:" font="0" float="true" pos="0,127,0,0" width="100" height="20" textcolor="#FF000000" align="right"/>
+		</HorizontalLayout>
+		<!---<HorizontalLayout width="480" height="200" bordercolor="#FF7F7F7F" bordersize="0,0,0,2">
+			<Label text="聊天文字:" float="true" pos="20,17,0,0" width="110" height="20" textcolor="#FF000000" align="right"/>
+			<Combo name="setfonttypecombo"  float="true" pos="140,17,0,0" width="120" height="24" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" itemalign="center" itemfont="3"
+			normalimage="file=&apos;Main\imgs\Dialog_Btn1.png&apos; corner=&apos;5,10,5,10&apos;" hotimage="file=&apos;Main\imgs\Dialog_Btn1_Hover.png&apos; corner=&apos;5,10,5,10&apos;" pushedimage="file=&apos;Main\imgs\Dialog_Btn1_Click.png&apos; corner=&apos;5,10,5,10&apos;" >
+			</Combo>
+			<Combo name="setfontsizecombo"  float="true" pos="140,17,0,0" width="90" height="24" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" itemalign="center" itemfont="3"
+			normalimage="file=&apos;Main\imgs\Dialog_Btn1.png&apos; corner=&apos;5,10,5,10&apos;" hotimage="file=&apos;Main\imgs\Dialog_Btn1_Hover.png&apos; corner=&apos;5,10,5,10&apos;" pushedimage="file=&apos;Main\imgs\Dialog_Btn1_Click.png&apos; corner=&apos;5,10,5,10&apos;" >		
+			</Combo>
+			<VerticalLayout float="true" pos="10,50,0,0" width="460" height="140" bkimage="file=&apos;Main\imgs\Dialog_Btn1_Hover.png&apos; corner=&apos;5,10,5,10&apos;" name="demolayout">
+				<HorizontalLayout>
+					<Button name="demo1Lab" text="When I was young I listen to the radio" font="4" width="250" height="40" padding="10,10,0,0"
+					normalimage="file=&apos;Chat\Chat_Left_Normal.png&apos; corner=&apos;10,25,10,10&apos;" hotimage="file=&apos;Chat\Chat_Left_Hover.png&apos; corner=&apos;10,25,10,10&apos;" pushedimage="file=&apos;Chat\Chat_Left_Click.png&apos; corner=&apos;10,25,10,10&apos;" />	
+					<Label />
+				</HorizontalLayout>
+				<HorizontalLayout>
+					<Label />
+					<Button name="demo2Lab" text="卡朋特 - 昨日重现" font="4" width="122" height="40" padding="0,0,10,0"
+					normalimage="file=&apos;Chat\Chat_right_normal.png&apos; corner=&apos;10,10,10,25&apos;" hotimage="file=&apos;Chat\Chat_right_Hover.png&apos; corner=&apos;10,10,10,25&apos;" pushedimage="file=&apos;Chat\Chat_right_Click.png&apos; corner=&apos;10,10,10,25&apos;" />					</HorizontalLayout>
+			</VerticalLayout>
+		</HorizontalLayout>-->
+		<HorizontalLayout width="430" padding="15,0,15,0">
+			<Label text="文件保存路径:" float="true" pos="0,25,0,0" width="100" height="20" textcolor="#FF000000" align="right"/>
+			<Edit  name="saveFolderPath" float="true" readonly="true" pos="120,20,0,0" width="300" height="30"  font="0"
+			normalimage="file='Setting\Setting_InputBox_Normal.png' corner='5,10,5,10'" hotimage="file='Setting\Setting_InputBox_Hover.png' corner='5,10,5,10'" pushedimage="file='Setting\Setting_InputBox_Click.png' corner='5,10,5,10'" />
+			<Button text="更改目录" name="changeFolderBtn" pos="118,60,0,0" width="95" height="35" float="true" font="0"
+			normalimage="file='Setting\Btn_White2.png' corner='5,10,5,10'" hotimage="file='Setting\Btn_White2_Hover.png' corner='5,10,5,10'" pushedimage="file='Setting\Btn_White2_Click.png' corner='5,10,5,10'" />
+			<Button text="打开文件夹" name="openFolderBtn" pos="218,60,0,0" width="105" height="35" float="true" font="0"
+			normalimage="file='Setting\Btn_White2.png' corner='5,10,5,10'" hotimage="file='Setting\Btn_White2_Hover.png' corner='5,10,5,10'" pushedimage="file='Setting\Btn_White2_Click.png' corner='5,10,5,10'" />
+		</HorizontalLayout>
+        <!---<HorizontalLayout float="true" pos="0,597,0,0" width="480" height="53">
+			<Button text="确定" name="okbtn"  float="true" pos="210,10,0,0" width="80" height="30" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" font="0"
+			normalimage="file=&apos;Main\imgs\Dialog_Btn1.png&apos; corner=&apos;5,10,5,10&apos;" hotimage="file=&apos;Main\imgs\Dialog_Btn1_Hover.png&apos; corner=&apos;5,10,5,10&apos;" pushedimage="file=&apos;Main\imgs\Dialog_Btn1_Click.png&apos; corner=&apos;5,10,5,10&apos;" />
+			<Button text="取消" name="cancelbtn"  float="true" pos="300,10,0,0" width="80" height="30" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center"  font="0"
+			normalimage="file=&apos;Main\imgs\Dialog_Btn1.png&apos; corner=&apos;5,10,5,10&apos;" hotimage="file=&apos;Main\imgs\Dialog_Btn1_Hover.png&apos; corner=&apos;5,10,5,10&apos;" pushedimage="file=&apos;Main\imgs\Dialog_Btn1_Click.png&apos; corner=&apos;5,10,5,10&apos;" />
+			<Button text="应用" name="usedbtn"  float="true" pos="390,10,0,0" width="80" height="30" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" font="0" 
+			normalimage="file=&apos;Main\imgs\Dialog_Btn1.png&apos; corner=&apos;5,10,5,10&apos;" hotimage="file=&apos;Main\imgs\Dialog_Btn1_Hover.png&apos; corner=&apos;5,10,5,10&apos;" pushedimage="file=&apos;Main\imgs\Dialog_Btn1_Click.png&apos; corner=&apos;5,10,5,10&apos;" />
+		</HorizontalLayout>-->
+    </VerticalLayout>
+</Window>

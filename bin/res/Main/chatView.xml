@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<chatView>
+<VerticalLayout>
+<RichEdit />
+<Control bkcolor="FFFF0000" height="1" />
+<HorizontalLayout height="200">
+<VerticalLayout>
+<RichEdit />
+<Button text="发送" height="50" />
+</VerticalLayout>
+</HorizontalLayout>
+</VerticalLayout>
+</chatView>

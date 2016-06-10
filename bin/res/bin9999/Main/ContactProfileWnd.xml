@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="300,435" caption="0,0,0,45">
+	<Font name="微软雅黑" size="12" bold="false" default="true" />
+	<Font name="微软雅黑" size="12" bold="true"/>
+	<Font name="微软雅黑" size="14" bold="false"/>
+	<Font name="微软雅黑" size="24" bold="false" italic="false" />
+    <VerticalLayout float="true" width="300" height="435" name="mainLayout" bkimage="file='Profile\Dialog_BG1.png' corner='20,40,20,40'">
+		<HorizontalLayout width="300" height="50">
+			<Label name="titleLab" text="个人信息" float="true" pos="70,10,0,0" width="160" height="20" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA"  font="1" align="center"/>
+			<Button name="closebtn" float="true" pos="266,8,0,0" width="24" height="24" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center"
+			normalimage="file='common\TopBar_Close_Btn.png'" hotimage="common\TopBar_Close_Btn_Hover.png" pushedimage="common\TopBar_Close_Btn_Click.png" />
+		</HorizontalLayout>
+		<VerticalLayout width="300" padding="0,10,0,0" name="contactcard_layout2">
+			<HeadImgUI name="profileHeadBtn" padding="79,6,0,0" width="142" height="142" recycle="false"  borderround="96,96"/>
+			<Label width="142" height="142" float="true" pos="79,6,0,0" bkimage="Profile\ProfileCard_Picture_BG.png"/>
+			<HorizontalLayout height="32" width="300"  padding="0,19,0,0" >
+				<Label name="profileNicknameLab" padding="40,0,0,0" width="200" height="32" text="" font="3" endellipsis="true" visible="false"/>
+				<Label name="sexLab" width="16" height="16" padding="3,9,1,0" bkimage="Main\imgs\\Man_Icon.png"/>
+			</HorizontalLayout>
+			<Text name="profileSignatureLab" text="" padding="25,10,0,0" width="250" height="0" font="2" align="center" textcolor="#FF919191" visible="false"/>
+			<Label padding="10,10,0,0" width="280" height="10" text="-----------------------------------------------" align="center" font="0" textcolor="#FFD2D2D2"/>
+			<VerticalLayout name="profileInfoLayout"  height="30" width="60"  padding="120,0,0,0">
+				<HorizontalLayout height="45" name="remarkLayout">
+					<Label text="备 注" name="remarkTip" float="true" pos="0,15,0,0" width="50" height="20" font="2" align="right" textcolor="#FFA9A9A9"/>
+					<Button name="profileRemarknameBtn" width="150" height="22" text="" textcolor="#FFA9A9A9" visible="true" textpadding="2,0,2,0" float="true" pos="70,16,0,0" align="left" font="2" endellipsis="true"
+					hotimage="file='Profile\Contacts_Profile_Remark_BG.png' corner='5,10,5,10'"/>
+					<Edit name="profileRemarknameEdit" width="150" height="22" text="" textcolor="#FF000000" visible="false" textpadding="2,1,2,1" float="true" pos="70,15,0,0" align="left" font="2" maxchar="32" 
+					focusedimage="file='Profile\EditBg.png' corner='5,10,5,10'" />
+				</HorizontalLayout>
+				<HorizontalLayout height="30" name="usernameLayout" visible="false">
+					<Label text="微信号" float="true" pos="0,5,0,0" width="50" height="20" font="2" align="right" textcolor="#FFA9A9A9"/>
+					<Text name="profileUsernameLab" text="" float="true" pos="70,5,0,0" width="210" height="20" font="2"/>
+				</HorizontalLayout>
+				<HorizontalLayout height="30" name="regionLayout">
+					<Label text="地 区" float="true" pos="0,5,0,0" width="50" height="20" font="2" align="right" textcolor="#FFA9A9A9"/>
+					<Text name="profileRegionLab" text="" float="true" pos="70,5,0,0" width="210" height="20" font="2"/>
+				</HorizontalLayout>
+			</VerticalLayout>
+			<Button name="profileSendBtn" text="发消息" padding="50,22,0,0" width="200" height="38" textcolor="#FFFFFFFF" font="2" valign="top" textpadding="0,-5,0,0"
+			normalimage="file='Profile\Btn_Green.png' corner='5,10,5,10'" hotimage="file='Profile\Btn_Green_Hover.png' corner='5,10,5,10'" pushedimage="file='Profile\Btn_Green_Click.png' corner='5,10,5,10'" />
+		</VerticalLayout>
+    </VerticalLayout>
+</Window>

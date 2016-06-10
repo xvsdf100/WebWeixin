@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<ChatItem>   		
+	<HorizontalLayout width="170" height="55">		      
+		<Picture name="icon" width="50" height="50" bkimage="chat\file_icon.png" bordercolor="FFC1C1C1" bordersize="1" padding="0,2,5,0"/>
+		<VerticalLayout padding="0,5,0,0">		
+			<Text name="title" maxheight="40" font="1" endellipsis="true"/>		        
+			<Text name="description" maxheight="38" endellipsis="true" />
+		</VerticalLayout>
+	</HorizontalLayout>		
+</ChatItem>   
+

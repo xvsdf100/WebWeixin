@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Window>
+  <ContactListItemUI>
+        <HorizontalLayout height="50" inset="10,10,10,10" >
+          <VerticalLayout >
+              <Label name="name_label" bordersize="0" textcolor="#FF5e5e5e" disabledtextcolor="#FF808080" endellipsis="true" padding="10,5,0,0" />
+          </VerticalLayout>
+        </HorizontalLayout>
+  </ContactListItemUI>
+</Window>

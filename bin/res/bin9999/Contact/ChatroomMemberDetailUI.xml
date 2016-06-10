@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window >
+	<ChatroomMemberDetailUI>
+		<HorizontalLayout>
+			
+			<VerticalLayout  bkcolor="#FFFFFFFF" >
+				<!---<VerticalLayout width="450" height="300" bkimage="file='border.png' corner='5,5,5,5'">-->
+				<Button name="btnTitle"  height="20"  text="" textcolor="#FF434343" font="1" visible="false" textpadding="0,0,0,0" padding="0,0,0,0" align="center"/>
+					<HorizontalLayout  height="50" bordersize="0,2,2,0">
+						<Control  />
+						<!---<VerticalLayout name="panelTitle" height="50" >
+							<Control  />
+								<Button name="btnTitle"  height="20"  text="" textcolor="#FF434343" font="1" visible="false" textpadding="0,0,0,0" padding="0,0,0,0" align="center"/>
+								<Edit name="txtInTitle" height="20"  text="" textcolor="#FF434343" font="1" visible="true" textpadding="0,0,0,0" padding="0,0,0,0" align="center" maxchar="32" />
+							<Control  />
+						</VerticalLayout>-->
+						
+						<VerticalLayout name="panelTitle" height="50" >
+							<Control  />
+							<Edit name="txtInTitle" height="24" text="" textcolor="#FF434343" font="1" visible="true" 
+								hotimage="file='contact\groupTitleHover.png' corner='5,10,5,10'" 
+								focusedimage="file='contact\groupTitleHover.png' corner='5,10,5,10'" 
+								textpadding="3,2,3,2" padding="0,0,0,0" align="left" maxchar="32" />
+							<Control  />
+						</VerticalLayout>
+						<Control  />
+						<Label name="txtMemberCnt" align="center"  padding="0,0,20,0"  textcolor="#FF969696" font="0" />
+					</HorizontalLayout>
+					
+					<TileLayout name="panelMembers" bordercolor="#FFe6e6e6" bordersize="1" vscrollbar="true" itemsize="107,150" >
+						
+					</TileLayout>
+					
+					<HorizontalLayout  padding="0,12,0,10" height="35">
+						<Control  />
+						<Button name="btnChatroomStartChat" text="发消息" width="200" height="38" textcolor="#FFFFFFFF" font="2" valign="top" textpadding="0,-5,0,0"
+						normalimage="file='Profile\Btn_Green.png' corner='5,10,5,10'" hotimage="file='Profile\Btn_Green_Hover.png' corner='5,10,5,10'" pushedimage="file='Profile\Btn_Green_Click.png' corner='5,10,5,10'" />
+						<Control />
+					</HorizontalLayout>
+				<!---</VerticalLayout>-->
+			</VerticalLayout>
+		</HorizontalLayout>
+	</ChatroomMemberDetailUI>
+</Window>

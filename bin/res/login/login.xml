@@ -1,0 +1,16 @@
+<!-- 单纯的用于整个消息调度，不显示界面 -->
+<?xml version="1.0" encoding="UTF-8"?>
+<Window size="320,470" caption="0,0,0,35">
+	<Font name="微软雅黑" size="12" bold="false" default="true" />
+	<Font name="微软雅黑" size="16" bold="false"/>
+	<Font name="微软雅黑" size="14" bold="false"/>
+	<Font name="微软雅黑" size="21" bold="false"/>
+	<Font name="微软雅黑" size="14" bold="false" underline="true"/>
+<VerticalLayout bkimage="file='login\bg_Gray.png' corner='8,10,8,10'" bkcolor="#FFAAAAAA">
+	<HorizontalLayout width="300" padding="1,0,0,0" height="40">
+		<Label name="titleLab" text="微信" float="true" pos="10,9,0,0" width="160" height="20" textcolor="#FF949494" disabledtextcolor="#FFA7A6AA"  font="1"/>
+		<Button name="closebtn" float="true" pos="270,8,0,0" width="22" height="22" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="login\Login_TopBar_Close_Btn.png" hotimage="login\Login_TopBar_Close_Btn_Hover.png" pushedimage="login\Login_TopBar_Close_Btn_Click.png" tooltip="关闭"/>
+	</HorizontalLayout>
+	<Control  name="qrCode" float="true" pos="10,60" width="300" height="300"/>
+</VerticalLayout>
+</Window>

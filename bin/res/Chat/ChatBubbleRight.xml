@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<ChatItem>   	
+	<HorizontalLayout>
+		<Control />				    	  
+		<Control name="chatStatus" width="24" height="24"  align="center" padding="0,0,10,0" visible="false" userdata="Common\loading_14.gif  chat\chat_msg_failed.png" />
+		<VerticalLayout>
+		<Container name="chatContentLayout" height="38" padding="0,10,0,0" inset="16,13,12,12" menu="true" bkimage="file='chat\Chat_MyselfBubble.png' corner='12,30,14,10'"  hotimage="file='chat\Chat_MyselfBubble_Hover.png' corner='12,28,14,10'" pushedimage="file='chat\Chat_MyselfBubble_Active.png' corner='12,30,14,10'" >
+			<!-- 这里因为不是一个控件导致背景 -->
+			<RichEdit name="chatContent" text="测试右边" multiline="true"  readonly="true" bkcolor="0x0" nativebkcolor="0xFFBEEB73"/>	
+           	<!-- <Button name="chatEventBtn" menu="true" visible="false"/>	  -->	
+		</Container>
+		</VerticalLayout>
+		<Control name="HeadIcon" width="34" height="34" padding="10,15,18,10"  borderround="1,1"  bkimage="file='Main\default.png'"/>						
+	</HorizontalLayout>	    
+</ChatItem>   

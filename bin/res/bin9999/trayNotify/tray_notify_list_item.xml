@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Window>
+  <TrayNotifyListItemUI name="notify_item" menu="false" padding="0,4,0,5">
+        <HorizontalLayout height="40" >
+            <HeadImgUI name="logo" padding="10,2,0,0" width="30" height="30" mouse="false" recycle="true"/>
+			<Label name="nickname" padding="10,0,0,0" font="1" bordersize="0" textcolor="#00000000" endellipsis="true"/>
+			<Label name="unread_count" padding="0,11,10,0" width="18" height="14" text="0" font="4" bordersize="0" bkimage="\Main\imgs\unread_count_bg.png" textcolor="#FFFFFFFF" align="center"/>
+        </HorizontalLayout>
+  </TrayNotifyListItemUI>
+</Window>

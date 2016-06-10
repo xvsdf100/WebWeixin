@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Window>
+  <ListContainerElement>
+        <HorizontalLayout height="60" inset="10,10,10,10">
+          <HeadImgUI name="logo" width="40" height="40" mouse="false"/>
+          <VerticalLayout padding="10,0,0,0">
+				<HorizontalLayout >
+					<Label name="nickname" font="1" bordersize="0" textcolor="#FF5E5E5E"/>
+					<Label name="time" width="35" text="11:23" bordersize="0" textcolor="#FFADADAD" align="right"/>
+				</HorizontalLayout>
+				<HorizontalLayout >
+					<Label name="description" bordersize="0" textcolor="#FF808080" />
+					<Label name="no_notify_bell" width="17" height="17" bordersize="0" bkimage="Main\imgs\no_notify_bell.png" align="center"/>
+				</HorizontalLayout>
+          </VerticalLayout>
+		  <Label name="unread_count" width="18" height="14" pos="40,5,58,19" float="true" text="5" font="4" bordersize="0" bkimage="Main\imgs\unread_count_bg.png" textcolor="#FFFFFFFF" align="center"/>
+		  <Label name="no_notify_red_dot" width="18" height="14" pos="44,6,54,16" float="true" bordersize="0" bkimage="Main\imgs\no_notify_red_dot.png" align="center"/>
+        </HorizontalLayout>
+  </ListContainerElement>
+</Window>

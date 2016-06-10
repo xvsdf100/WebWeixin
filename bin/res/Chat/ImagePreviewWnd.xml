@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="930,685" sizebox="4,4,4,4" caption="0,0,0,45" mininfo="930,685" roundcorner="2,2">
+	<VerticalLayout name="bg" bkimage="file='Main\imgs\Windows_BG.png' corner='20,40,20,40'" inset="1,1,1,1">
+		<!--- 标题栏 -->
+		<Container name="title_layout" height="38">
+            <Label text="图片查看器" textcolor="#FF000000" font="1" align="center" />
+            <HorizontalLayout inset="8,7,8,7">
+				<Control />
+				<Button name="minbtn" width="24" height="24" padding="0,0,2,0" normalimage="file='common\TopBar_Narrow_Btn.png'" hotimage="common\TopBar_Narrow_Btn_Hover.png" pushedimage="common\TopBar_Narrow_Btn_Click.png" />
+				<Button name="maxbtn" width="24" height="24" padding="0,0,2,0" normalimage="file='common\TopBar_Full_Btn.png'" hotimage="common\TopBar_Full_Btn_Hover.png" pushedimage="common\TopBar_Full_Btn_Click.png" />
+				<Button name="restorebtn" visible="false" width="24" height="24" padding="0,0,2,0" normalimage="file='common\TopBar_Window_Btn.png'" hotimage="common\TopBar_Window_Btn_Hover.png" pushedimage="common\TopBar_Window_Btn_Click.png"/>
+				<Button name="closebtn" width="24" height="24" normalimage="file='common\TopBar_Close_Btn.png'" hotimage="common\TopBar_Close_Btn_Hover.png" pushedimage="common\TopBar_Close_Btn_Click.png" />
+
+            </HorizontalLayout>
+        </Container>
+
+		<!--- 登录菊花 -->
+		<Container name="loading" visible = "false">
+			<Picture name="loading" align="center"  bkimage="Common\loading.gif"/>
+		</Container>
+
+		<!--- 图片显示 -->
+		<VerticalLayout name="picLayout">
+			<Container name="border">
+	 			<Picture name="content" stretch="true" width="24" height="24"  align="center" visible="true" bkimage="main\test.jpg" /> 	 		
+			</Container>
+		</VerticalLayout>
+
+		<!--- 底部按钮 -->
+		<HorizontalLayout inset="8,7,8,7" name="foot_layout" height="38">
+			<Control />
+			<Button name="previousBtn" width="50" height="24" padding="0,0,5,0" font="1" text="上一张" />
+			<Button name="saveBtn" width="35" height="24" padding="0,0,5,0" font="1" text="保存"/>
+			<Button name="nextBtn" width="50" height="24" padding="0,0,5,0" font="1" text="下一张"/>
+			<Control />
+        </HorizontalLayout>
+	 </VerticalLayout>
+</Window>

@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="280,400" caption="0,0,0,35" maxinfo="300,340">
+	<Font name="微软雅黑" size="12" bold="false" default="true" />
+	<Font name="微软雅黑" size="16" bold="false"/>
+	<Font name="微软雅黑" size="14" bold="false"/>
+	<Font name="微软雅黑" size="21" bold="false"/>
+	<Font name="微软雅黑" size="14" bold="false" underline="true"/>
+    <VerticalLayout width="280" height="400" bkimage="file='QBLogin\bg_Gray.png' corner='8,10,8,10'" bkcolor="#FFAAAAAA">
+		<HorizontalLayout width="280" padding="1,0,0,0" height="60">
+			<Label float="true" pos="0,1,0,0" width="37" height="33" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" bkimage="QBLogin\icon_wechat.png"/>
+			<Label name="titleLab" text="微信" float="true" pos="40,10,0,0" width="160" height="20" textcolor="#FF949494" disabledtextcolor="#FFA7A6AA"  font="1"/>
+			<!---<Button name="minbtn" float="true" pos="194,8,0,0" width="22" height="22" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="Login\Login_TopBar_Narrow_Btn.png" hotimage="Login\Login_TopBar_Narrow_Btn_Hover.png" pushedimage="Login\Login_TopBar_Narrow_Btn_Click.png" />-->
+			<Button name="closebtn" float="true" pos="243,0,0,0" width="37" height="33" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="QBLogin\icon_close.png" hotimage="QBLogin\icon_close_hover.png" pushedimage="QBLogin\icon_close_active.png" tooltip="关闭"/>
+		</HorizontalLayout>
+		<TabLayout width="280" height="246" name="qrcodeTab">
+			<!--- 登录二维码 -->
+			<HorizontalLayout float="true" pos="39,14,0,0" width="202" height="202" visible = "false">
+				<Picture name="qrcodeLab" float="true" pos="8,8,0,0" width="186" height="186" disabledtextcolor="#FFA7A6AA" visible="true"/>
+				<!--- <HorizontalLayout width="202" height="202" bkcolor="#AA252525" name="refreshCover">
+					<Button pos="69,85,0,0" float="true" width="74" height="32" name="refreshBtn" text="刷新"
+					normalimage="file='Login\Btn_Login_Refresh.png' corner='8,10,8,10'" hotimage="file='Login\Btn_Login_Refresh_Hover.png' corner='8,10,8,10'" pushedimage="file='Login\Btn_Login_Refresh_Click.png' corner='8,10,8,10'"/>
+				</HorizontalLayout> -->
+			</HorizontalLayout>
+			<!--- 登录菊花 -->
+			<ProgressFlower name="loadingcode" float="true" pos="128,108,0,0" width="24" height="24" visible = "true" elapse="20" framewidth="24" frameheight="24" framecount="30" bkimage="Common\load_flower.png"/>
+			<!--<Picture name="loadingcode" float="true" pos="9,4,0,0" width="232" height="232" align="center" visible = "false" bkimage="Common\loading.gif"/>-->
+			<!--- 登录头像 -->
+			<HorizontalLayout width="280" height="230" padding="0,15,0,0" visible = "false">
+				<Label name="picLabel" float="true" pos="81,13,0,0"  width="119" height="119" bkimage="QBLogin\Avatar_Default_Gray.png" borderround="90,90"/>
+				<MMHttpImage name="headHttpImg" float="true" pos="81,13,0,0"  width="119" height="119" borderround="90,90" visible="false"/>
+				<Label float="true" pos="81,13,0,0"  width="119" height="119" bkimage="QBLogin\HeadShow_Frame_Gray.png"/>
+				<Label text="扫描成功" float="true" pos="65,138,0,0"  width="150" height="22" align="center" textcolor="#FF000000" font="3" />
+				<Label text="请在手机点击确认以登录" float="true" pos="35,170,0,0"  width="210" height="15" align="center" textcolor="#FF959595" font="2" />
+			</HorizontalLayout>
+			<!--- 二维码获取失败 -->
+			<HorizontalLayout name="qrcodeErr" float="true" pos="0,4,0,0" width="280" height="260" visible = "false">
+				<Label float="true" pos="77,35,0,0"  width="125" height="83" bkimage="QBLogin\wifi_Gray.png"/>
+				<Text text="无法获取二维码" float="true" pos="70,160,0,0" height="20" width="140" align="center"  textcolor="#FF848484" font="2"/>
+				<Text text="请重新检查你的网络连接" float="true" pos="70,180,0,0" height="20" width="140" align="center"  textcolor="#FF848484" font="2"/>
+			</HorizontalLayout>
+			<!--- 初始化失败 -->
+			<HorizontalLayout name="qrcodeErr" float="true" pos="0,4,0,0" width="280" height="260" visible = "false">
+				<Label float="true" pos="77,35,0,0"  width="125" height="83" bkimage="QBLogin\wifi_Gray.png"/>
+				<Text text="初始化失败" float="true" pos="70,160,0,0" height="20" width="140" align="center"  textcolor="#FF848484" font="2"/>
+				<Text text="请重新检查你的网络连接" float="true" pos="70,180,0,0" height="20" width="140" align="center"  textcolor="#FF848484" font="2"/>
+			</HorizontalLayout>
+			<!--- 快速登录 -->
+			<HorizontalLayout width="250" height="230" visible = "false">
+				<Label name="quickLoginPicLabel" float="true" pos="81,18,0,0"  width="119" height="119" bkimage="Login\Login_HeadShowDefault.png"/>
+				<MMHttpImage name="quickLoginHeadImg" float="true" pos="81,18,0,0"  width="119" height="119" visible="false"/>
+				<Label float="true" pos="81,18,0,0"  width="119" height="119" bkimage="QBLogin\HeadShow_Frame_Gray.png"/>
+				<Label name="nicknameLab" text="" float="true" pos="65,138,0,0"  width="150" height="20" align="center" textcolor="#FF878787" font="2" endellipsis="true"  visible="false"/>
+				<Button name="quickLoginBtn" text="通过手机登录" float="true" pos="60,176,0,0"  width="162" height="42" align="center" textcolor="#FFFFFFFF" font="2" textpadding="0,0,0,0"
+				normalimage="file='QBLogin\Btn_normal.png' corner='3,10,3,10'" hotimage="file='QBLogin\Btn_hover.png' corner='3,10,3,10'" pushedimage="file='QBLogin\Btn_press.png' corner='3,10,3,10'" />
+				<Button name="quickLoginClickTip" text="请在手机上确认登录操作" float="true" pos="35,176,0,0"  width="210" height="40" align="center" textpadding="0,-5,0,0" textcolor="#FF878787" font="2" />
+			</HorizontalLayout>
+		</TabLayout>
+		<TabLayout width="280" height="80" name="tipTab">
+			<!--- 登录提示语 -->
+			<Label name="wechatTipLab" float="true" pos="30,0,0,0" width="220" height="30" textcolor="#FF848484" align="center" text="请使用微信的扫一扫以登录" font="2"/>
+			<!--- 返回二维码登录操作 -->
+			<Button name="qrcodeBackBtn" float="true" pos="80,5,0,0" width="120" height="20" textcolor="#FF75b2fb" align="center" text="返回扫二维码登录" font="4"/>
+
+			<!--- 登录中菊花 -->
+			<HorizontalLayout name="loadingLayout" float="true" pos="25,0,0,0" width="220" height="30" >
+				<ProgressFlower float="true" pos="70,8,0,0" width="14" height="14" elapse="20" framewidth="14" frameheight="14" framecount="30" bkimage="Common\loading_14.png"/>
+				<Label name="loginingLab" float="true" pos="90,4,0,0" width="120" height="30" textcolor="#FF848484" align="left" text="正在登录…" font="2"/>
+			</HorizontalLayout>
+			<!--- 验证码失效 -->
+			<HorizontalLayout float="true" pos="35,0,0,0" width="210" height="30">
+				<Label float="true" pos="0,5,0,0" width="105" height="30" textcolor="#FF949494" align="right" text="二维码失效，请" font="2"/>
+				<Button name="refreshBtn" float="true" pos="105,5,0,0" width="30" height="20" textcolor="#FF75b2fb" align="center" text="刷新" font="4" align="top"/>
+				<Label float="true" pos="135,5,0,0" width="75" height="30" textcolor="#FF949494" align="left" text="后重新扫描" font="2"/>
+			</HorizontalLayout>
+			<!--- 登录状态失效 -->
+			<HorizontalLayout float="true" pos="10,0,0,0" width="238" height="30">
+				<Label float="true" pos="0,5,0,0" width="133" height="30" textcolor="#FF949494" align="right" text="登录状态失效，请" font="2"/>
+				<Button name="refreshBtn" float="true" pos="133,5,0,0" width="30" height="20" textcolor="#FF75b2fb" align="center" text="刷新" font="4" align="top"/>
+				<Label float="true" pos="163,5,0,0" width="75" height="30" textcolor="#FF949494" align="left" text="后重新登录" font="2"/>
+			</HorizontalLayout>
+			<!--- <Label name="freshTxt" float="true" pos="35,0,0,0" width="210" height="30" textcolor="#FF949494" align="center" text="二维码失效，请刷新以登录" font="2"/> -->
+			<!--- 获取失败 -->
+			<Button name="retryBtn" float="true" pos="120,5,0,0" width="40" height="20" textcolor="#FF75b2fb" valign="center" align="center" text="重试 " font="4"/>
+			<!--- 解除账号绑定	-->
+			<Button name="unbindBtn" float="true" pos="80,5,0,0" width="120" height="20" textcolor="#FF75b2fb" align="center" text="与浏览器解除关联" font="4" visible="false"/>
+		</TabLayout>
+		
+		<HorizontalLayout float="true" pos="0,330,400,380">
+			<Option name="autoRunOption" float="true" pos="80,18,0,0" width="14" height="14" textcolor="#FF000000"
+			normalimage="QBLogin\Setting_CheckBox_Normal.png" hotimage="QBLogin\Setting_CheckBox_Hover.png" pushedimage="QBLogin\Setting_CheckBox_Normal.png"
+			selectedimage="QBLogin\Setting_CheckBox_Click.png" disabledimage="QBLogin\Setting_CheckBox_Normal.png"/>
+			<Label text="启动时自动打开微信" float="true" pos="98,15,0,0" width="200" height="20" textcolor="#FF848484" />
+		</HorizontalLayout>
+	</VerticalLayout>
+</Window>

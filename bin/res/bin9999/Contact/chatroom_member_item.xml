@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Window>
+<ChatroomMemberItemUI name="itemRoot"  height="110" padding="0,14,0,0" width="92" bordercolor="#FFe6e6e6" bordersize="1" >
+	<HorizontalLayout width="92" padding="0,14,0,0" height="60"  >
+		<Control float="false" />
+		<HeadImgUI float="false"  name="imgHead" width="60" height="60" borderround="1,1" mouse="false"/>
+		<Control float="false" />
+	</HorizontalLayout>
+	<HorizontalLayout padding="0,12,0,0" width="92" height="18">
+		<Label name="txtName" bordersize="0" padding="3,0,3,0" align="center"  font="0" textcolor="#FF5e5e5e" disabledtextcolor="#FF808080" endellipsis="true" />
+	</HorizontalLayout>
+	<Button name="btnRoot" menu="true" hotimage="file='Contact\groupTitleHover.png' corner='5,10,5,10'" 
+	float="true" pos="0,0,92,110"  />
+</ChatroomMemberItemUI>
+</Window>

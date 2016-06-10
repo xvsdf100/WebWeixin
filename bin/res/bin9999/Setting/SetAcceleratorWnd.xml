@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="270,170" caption="0,0,0,45">
+	<Font name="微软雅黑" size="12" bold="false" default="true" />
+	<Font name="微软雅黑" size="12" bold="true"/>
+	<Font name="微软雅黑" size="16" bold="false" />
+	<Font name="微软雅黑" size="24" bold="false" />
+    <VerticalLayout name="mainLayout" bkimage="file='Setting\Setting_Dialog_Bg.png' corner='10,10,10,10'">
+		<Label name="titleLab" text="请直接在键盘上输入新的快捷键" pos="15,10,0,0" width="270" height="44" textcolor="#FF717171" disabledtextcolor="#FFA7A6AA"  font="2" align="center"/>
+		<Text text="" name="contentLab" padding="0,26,0,0" textcolor="#FF000000" height="30" align="center" disabledtextcolor="#FFA7A6AA" font="3"/>
+		<HorizontalLayout>
+			<Button text="确定" name="okbtn"  float="true" pos="105,28,0,0" width="75" height="37" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center"
+			normalimage="file='Setting\Btn_White2.png' corner='5,10,5,10'" hotimage="file='Setting\Btn_White2_Hover.png' corner='5,10,5,10'" pushedimage="file='Setting\Btn_White2_Click.png' corner='5,10,5,10'" />
+			<Button text="取消" name="cancelbtn"  float="true" pos="185,28,0,0" width="75" height="37" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" 
+			normalimage="file='Setting\Btn_White2.png' corner='5,10,5,10'" hotimage="file='Setting\Btn_White2_Hover.png' corner='5,10,5,10'" pushedimage="file='Setting\Btn_White2_Click.png' corner='5,10,5,10'" />
+        </HorizontalLayout>
+    </VerticalLayout>
+</Window>
